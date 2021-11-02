@@ -63,9 +63,7 @@ Yes! In Live Mode, an SSL certificate must be installed on your site to use Fibe
 
 Yes, it does - production and sandbox mode is driven by the API Access keys you use.
 
-= Where can I can get support? =
 
-You can contact developer with this [link](https://paysley.com/contact/).
 
 == Screenshots ==
 
