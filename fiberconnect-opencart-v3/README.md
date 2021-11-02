@@ -1,7 +1,7 @@
 === FiberConnect ===
 
 Contributors: fiberconnect
-Tags: credit card, fiberconnect, google pay, apple pay, nedbank, payment method, payment gateway
+Tags: credit card, fiberconnect
 Requires at least: 3.0
 Tested up to: 3.0.36
 Requires PHP: 7.0
@@ -15,13 +15,6 @@ Payments over multiple channels
 
 = Because you want more than just a shopping cart experience =
 
-* Take payments online and offline
-* Use your preferred merchant service provider
-* Promote directly on Facebook, LinkedIn and Twitter
-
-= Changing the way you take card-not-present payments. =
-
-FiberConnect is a single card-not-present payment platform that allows you to accept payments in a variety of ways: SEPA, Paypal, Credit/Debit Card, Nedbank EFT, google pay, apple pay and more. Add FiberConnect to your shopping cart for easy and secure payments during checkout, or use your FiberConnect portal to deliver payment requests to your customers using text messaging (SMS), email, social media, and QR codes.
 
 FiberConnect is the best payment solution available for merchants who need payment flexibility, or if your business has grown beyond just eCommerce and the service you offer requires you to take payments anywhere, anytime.
  
