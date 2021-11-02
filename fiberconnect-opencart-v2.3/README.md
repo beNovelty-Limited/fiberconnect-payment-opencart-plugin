@@ -32,7 +32,7 @@ FiberConnect is the best payment solution available for merchants who need payme
 
 == Installation ==
 
-Note: Opencart 3.0.3.1 - 3.0.3.6 must be installed for this plugin to work.
+Note: Opencart v2.3 must be installed for this plugin to work.
 
 = Manual installation =
 
