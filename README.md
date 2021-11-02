@@ -54,12 +54,7 @@ Yes! In Live Mode, an SSL certificate must be installed on your site to use Fibe
 Yes, it does - production and sandbox mode is driven by the API Access keys you use.
 
 
-== Screenshots ==
 
-1. FiberConnect title.
-2. The settings panel used to configure FiberConnect.
-3. Checkout with FiberConnect.
-4. FiberConnect payment page.
 
 == Changelog ==
 
