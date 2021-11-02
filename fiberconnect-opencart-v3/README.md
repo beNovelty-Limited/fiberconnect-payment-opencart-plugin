@@ -21,7 +21,6 @@ FiberConnect is the best payment solution available for merchants who need payme
 == Features ==
 
 * Accept payments via FiberConnect.
-* Partial / Full refund.
  
 == Localization ==
 
