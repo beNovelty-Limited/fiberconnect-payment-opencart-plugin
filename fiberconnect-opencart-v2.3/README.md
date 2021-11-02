@@ -2,8 +2,8 @@
 
 Contributors: fiberconnect
 Tags: credit card, fiberconnect
-Requires at least: 3.0
-Tested up to: 3.0.36
+Requires at least: 2.3
+Tested up to: 2.3
 Requires PHP: 7.0
 Stable tag: 1.0.0
 License: GPLv3
