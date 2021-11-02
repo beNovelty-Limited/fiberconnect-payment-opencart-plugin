@@ -1,0 +1,119 @@
+{{ header }} {{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-fiberconnect_ageneral" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %}
+    <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    <div class="alert alert-info">
+      <i class="fa fa-exclamation-circle"></i>
+      {{ tips_fiberconnect }}
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ edit_title }}</h3>
+      </div>
+      <div class="panel-body">
+        <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-fiberconnect_ageneral" class="form-horizontal">
+          <h4>{{ settings_connection }}</h4>
+          <div class="form-group required">
+            <label class="col-sm-2 control-label" for="input-api-key">{{ settings_connection_key }}</label>
+            <div class="col-sm-10">
+              <input type="password" name="payment_fiberconnect_api_key" value="{{ payment_fiberconnect_api_key }}" placeholder="{{ settings_connection_key }}" id="input-api-key" class="form-control" />
+              {% if error_api_key %}
+              <span class="error-message">{{ error_api_key }}</span>
+              {% endif %}
+            </div>
+          </div>
+
+          <h4>{{ settings_basic }}</h4>
+          <div class="form-group required">
+            <label class="col-sm-2 control-label" for="input-title"><span data-toggle="tooltip" title="{{ settings_basic_name_tips }}">{{ settings_basic_name }}</span></label>
+            <div class="col-sm-10">
+              <input type="text" name="payment_fiberconnect_title" value="{{ payment_fiberconnect_title }}" placeholder="{{ settings_basic_name }}" id="input-title" class="form-control" />
+              {% if error_title %}
+              <span class="error-message">{{ error_title }}</span>
+              {% endif %}
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status"><span data-toggle="tooltip" title="{{ settings_basic_status_tips }}">{{ settings_basic_status }}</span></label>
+            <div class="col-sm-10">
+              <select name="payment_fiberconnect_status" id="input-status" class="form-control">
+                {% if payment_fiberconnect_status %}
+                <option value="1" selected="selected">{{ text_enabled }}</option>
+                <option value="0">{{ text_disabled }}</option>
+                {% else %}
+                <option value="1">{{ text_enabled }}</option>
+                <option value="0" selected="selected">{{ text_disabled }}</option>
+                {% endif %}
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-sort-order"><span data-toggle="tooltip" title="{{ settings_basic_order_tips }}">{{ settings_basic_order }}</span></label>
+            <div class="col-sm-10">
+              <input type="text" name="payment_fiberconnect_sort_order" value="{{ payment_fiberconnect_sort_order }}" placeholder="{{ settings_basic_order }}" id="input-sort-order" class="form-control" />
+            </div>
+          </div>
+
+          <h4>{{ settings_payment }}</h4>
+          <div class="form-group">
+            <div class="payment-message">{{ settings_payment_message }}</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(() => {
+  if ($('#input-title').val() === '') {
+    $('#input-title').val('FiberConnect Payment (轉數快, PayMe, 支付寶, 微信支付)');
+  }
+});
+</script>
+
+<style>
+h4 {
+  margin-top: 15px;
+  margin-left: 3px;
+}
+
+h4 + .form-group {
+  border-top: 1px solid #ededed;
+}
+
+.form-group {
+  margin: 0px;
+  padding: 25px 0px;
+}
+
+.error-message {
+  color: #ff0000;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.payment-message {
+  color: #999999;
+  font-size: 1.5rem;
+  margin-bottom: -15px;
+  margin-left: 15px;
+}
+</style>
+{{ footer }}
