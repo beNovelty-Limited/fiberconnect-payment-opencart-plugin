@@ -16,7 +16,6 @@ Payments over multiple channels
 = Because you want more than just a shopping cart experience =
 
 
-= Changing the way you take card-not-present payments. =
 
 
 FiberConnect is the best payment solution available for merchants who need payment flexibility, or if your business has grown beyond just eCommerce and the service you offer requires you to take payments anywhere, anytime.
@@ -41,8 +40,8 @@ The extension is installed via a zip file.
 After successful download of the zip file, the extension is installed as follows: 
 
 1. Decompress zip file (into a temporary directory).
-2. Adapt the decompressed files and directories according to the current status of the Opencart 3.0 installation group and user access rights.
-3. Copy content of the directory “src” into the Opencart 3.0 main directory, thus over­writing the previous files/directories.
+2. Adapt the decompressed files and directories according to the current status of the Opencart 2.3 installation group and user access rights.
+3. Copy content of the directory “src” into the Opencart 2.3 main directory, thus over­writing the previous files/directories.
 4. Delete all file Opencart cache except index.html under patch ”system/storage/cache/”.
 5. After upload the content, Click Extentions navigate and Choose the extention type with the selection "Payments".
 6. Choose "FiberConnect Settings" and click the installation button.
